@@ -17,7 +17,8 @@ def get_sections():
                 section_name = line[1:-1]
                 subsections = []
             else:
-                tmp = line.split('\t', 1)
+                tmp = line.split()
+                tmp = [tmp[0], ' '.join(tmp[1:])]
                 if len(tmp) == 1:
                     raise ValueError('Subsection parse error: %s' % line)
                 filename = tmp[0]
@@ -40,20 +41,19 @@ def get_style(filename):
 
 # TODO: check if this is everything we need
 def texify(s):
-    #s = s.replace('\'', '\\\'')
-    #s = s.replace('\"', '\\\"')
     return s
 
 def get_tex(sections):
-    tex = ''
+    tex = []
+    add = tex.append
     for (section_name, subsections) in sections:
-        tex += '\\section{%s}\n' % texify(section_name)
+        add('\\section{%s}\n' % texify(section_name))
         for (filename, subsection_name) in subsections:
-            tex += '\\subsection{%s}\n' % texify(subsection_name)
-            tex += '\\raggedbottom\\lstinputlisting[style=%s]{%s/%s}\n' % (get_style(filename), code_dir, filename)
-            tex += '\\hrulefill\n'
-        tex += '\n'
-    return tex
+            add('\\subsection{%s}\n' % texify(subsection_name))
+            add('\\raggedbottom\\lstinputlisting[style=%s]{%s/%s}\n' % (get_style(filename), code_dir, filename))
+            add('\\hrulefill\n')
+        add('\n')
+    return ''.join(tex)
 
 if __name__ == "__main__":
     sections = get_sections()

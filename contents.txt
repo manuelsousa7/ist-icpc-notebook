@@ -3,47 +3,62 @@
 # Subsections within a section should follow the format:
 #   [filename within code directory][tab character \t][subsection title]
 
-[Combinatorial optimization]
-#MaxFlow.cc	Dense max-flow
-Dinic.cc	Sparse max-flow
-MinCostMaxFlow.cc	Min-cost max-flow
-PushRelabel.cc	Push-relabel max-flow	
-MinCostMatching.cc	Min-cost matching
-MaxBipartiteMatching.cc	Max bipartite matchine
-MinCut.cc	Global min-cut
-GraphCutInference.cc	Graph cut inference
-#MaxFlow.java	Max-flow (Java)
-#MinCostMaxFlow.java	Min-cost max-flow (Java)
+[Common Stuff]
+DefaultCode.cc	Default code
+PQueue.cc Priority Queue
+
+#[Combinatorial optimization]
+####MaxFlow.cc	Dense max-flow
+#Dinic.cc	Sparse max-flow
+#MinCostMaxFlow.cc	Min-cost max-flow
+#PushRelabel.cc	Push-relabel max-flow	
+#MinCostMatching.cc	Min-cost matching
+#MaxBipartiteMatching.cc	Max bipartite matchine
+#MinCut.cc	Global min-cut
+#GraphCutInference.cc	Graph cut inference
+####MaxFlow.java	Max-flow (Java)
+####MinCostMaxFlow.java	Min-cost max-flow (Java)
 
 [Geometry]
 ConvexHull.cc	Convex hull
 Geometry.cc	Miscellaneous geometry
 JavaGeometry.java	Java geometry
 Geom3D.java	3D geometry
-Delaunay.cc	Slow Delaunay triangulation
-#Delaunay.java	Slow Delaunay triangulation (Java)
+#Delaunay.cc	Slow Delaunay triangulation
+####Delaunay.java	Slow Delaunay triangulation (Java)
 
 [Numerical algorithms]
 Euclid.cc	Number theory (modular, Chinese remainder, linear Diophantine)
-GaussJordan.cc	Systems of linear equations, matrix inverse, determinant
-ReducedRowEchelonForm.cc	Reduced row echelon form, matrix rank
+#GaussJordan.cc	Systems of linear equations, matrix inverse, determinant
+#ReducedRowEchelonForm.cc	Reduced row echelon form, matrix rank
 FFT_new.cc	Fast Fourier transform
+FFT.cc	Fast Fourier transform (C++)
 Simplex.cc	Simplex algorithm
-#FFT.cc	Fast Fourier transform (C++)
 
 [Graph algorithms]
-#BellmanFord.cc	Bellman-Ford shortest paths with negative edge weights (C++)
-#DijkstraFloyd.cc	Dijkstra and Floyd's algorithm (C++)
-FastDijkstra.cc	Fast Dijkstra's algorithm
-SCC.cc	Strongly connected components
-EulerianPath.cc	Eulerian path
-#Kruskal.cc	Kruskal's algorithm
-#Prim.cc	Minimum spanning trees
+#BellmanFord.cc	Bellman-Ford shortest paths with negative edge weights (C++)  - Stanford
+#DijkstraFloyd.cc	Dijkstra and Floyd's algorithm (C++) - Stanford
+FastDijkstra.cc	Fast Dijkstra's algorithm - Stanford
+SCC.cc	Strongly connected components - Stanford
+EulerianPath.cc	Eulerian path - Stanford
+#Prim.cc	Minimum spanning trees - Stanford
+Graphs/BellmanFord.cc	Bellman Ford (Shortest path with negative edges)
+Graphs/FloydWarshall.cc Floyd-Wrashall (All-pairs shortest path)
+Graphs/Prim.cc Prim (MST)
+Kruskal.cc	Kruskal - Stanford
+Graphs/MaxBipartiteMatching.cc Maximum Bipartite Matching
+Graphs/FordFulkerson.cc Ford-Fulkerson (Max Flow)
+Graphs/EdmondsKarp.cc Edmonds-Karp (Max Flow)
+Graphs/SCC.cc Strongly Connected Components
+
+[Strings]
+Strings/SuffixArray.cc	Suffix array - Stanford
+Strings/KMP.cc Knuth-Morris-Prath (String matching)
 
 [Data structures]
-SuffixArray.cc	Suffix array
-BIT.cc	Binary Indexed Tree
-UnionFind.cc	Union-find set
+Structures/RMQ.cc Range Minimum Query
+BIT.cc	Binary Indexed Tree - Stanford
+# UnionFind.cc	Union-find set - Stanford
 KDTree.cc	KD-tree
 splay.cc	Splay tree
 SegmentTreeLazy.java	Lazy segment tree
@@ -55,7 +70,7 @@ Dates.cc	Dates
 LogLan.java	Regular expressions
 Primes.cc	Prime numbers
 IO.cc	C++ input/output
-KMP.cc	Knuth-Morris-Pratt
+# KMP-st.cc	Knuth-Morris-Pratt - Stanford
 LatLong.cc	Latitude/longitude
 EmacsSettings.txt	Emacs settings
 #TopologicalSort.cc	Topological sort (C++)
@@ -66,3 +81,7 @@ EmacsSettings.txt	Emacs settings
 #FastExpo.cc	Fast exponentiation
 #LCS.cc	Longest common subsequence
 #MillerRabin.c	Miller-Rabin Primality Test (C)
+
+
+#[Math]
+Add things
