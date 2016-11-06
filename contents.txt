@@ -3,43 +3,19 @@
 # Subsections within a section should follow the format:
 #   [filename within code directory][tab character \t][subsection title]
 
-[Common Stuff]
+
+[Miscellaneous]
 DefaultCode.cc	Default code
+IO.cc	C++ input/output
+STL.cc	STL stuff
 PQueue.cc Priority Queue
+Dates.java	Dates (Java)
 
-#[Combinatorial optimization]
-####MaxFlow.cc	Dense max-flow
-#Dinic.cc	Sparse max-flow
-#MinCostMaxFlow.cc	Min-cost max-flow
-#PushRelabel.cc	Push-relabel max-flow	
-#MinCostMatching.cc	Min-cost matching
-#MaxBipartiteMatching.cc	Max bipartite matchine
-#MinCut.cc	Global min-cut
-#GraphCutInference.cc	Graph cut inference
-####MaxFlow.java	Max-flow (Java)
-####MinCostMaxFlow.java	Min-cost max-flow (Java)
-
-[Geometry]
-ConvexHull.cc	Convex hull
-Geometry.cc	Miscellaneous geometry
-JavaGeometry.java	Java geometry
-Geom3D.java	3D geometry
-#Delaunay.cc	Slow Delaunay triangulation
-####Delaunay.java	Slow Delaunay triangulation (Java)
-
-[Numerical algorithms]
-Euclid.cc	Number theory (modular, Chinese remainder, linear Diophantine)
-#GaussJordan.cc	Systems of linear equations, matrix inverse, determinant
-#ReducedRowEchelonForm.cc	Reduced row echelon form, matrix rank
-FFT_new.cc	Fast Fourier transform
-FFT.cc	Fast Fourier transform (C++)
-Simplex.cc	Simplex algorithm
 
 [Graph algorithms]
 #BellmanFord.cc	Bellman-Ford shortest paths with negative edge weights (C++)  - Stanford
 #DijkstraFloyd.cc	Dijkstra and Floyd's algorithm (C++) - Stanford
 FastDijkstra.cc	Fast Dijkstra's algorithm - Stanford
-SCC.cc	Strongly connected components - Stanford
 EulerianPath.cc	Eulerian path - Stanford
 #Prim.cc	Minimum spanning trees - Stanford
 Graphs/BellmanFord.cc	Bellman Ford (Shortest path with negative edges)
@@ -47,13 +23,17 @@ Graphs/FloydWarshall.cc Floyd-Wrashall (All-pairs shortest path)
 Graphs/Prim.cc Prim (MST)
 Kruskal.cc	Kruskal - Stanford
 Graphs/MaxBipartiteMatching.cc Maximum Bipartite Matching
-Graphs/FordFulkerson.cc Ford-Fulkerson (Max Flow)
-Graphs/EdmondsKarp.cc Edmonds-Karp (Max Flow)
+Graphs/ArticulationPoints.cc Articulation Points
 Graphs/SCC.cc Strongly Connected Components
+SCC.cc	Strongly connected components - Stanford
 
-[Strings]
-Strings/SuffixArray.cc	Suffix array - Stanford
-Strings/KMP.cc Knuth-Morris-Prath (String matching)
+
+[Flows]
+Flows/FordFulkerson.cc Ford-Fulkerson (Max Flow)
+Flows/EdmondsKarp.cc Edmonds-Karp (Max Flow)
+Flows/MinCostMaxFlow.cc	Min-cost max-flow - Stanford
+Flows/MinCut.cc	Global min-cut - Stanford
+
 
 [Data structures]
 Structures/RMQ.cc Range Minimum Query
@@ -64,24 +44,59 @@ splay.cc	Splay tree
 SegmentTreeLazy.java	Lazy segment tree
 LCA.cc	Lowest common ancestor
 
-[Miscellaneous]
-LongestIncreasingSubsequence.cc	Longest increasing subsequence
-Dates.cc	Dates
+[Geometry]
+ConvexHull.cc	Convex hull - Stanford
+Geometry/ConvexHull.cc Convex Hull
+Geometry.cc	Miscellaneous geometry
+Geometry/ClosestPair.cc Closest Pair
+
+# JavaGeometry.java	Java geometry
+# Geom3D.java	3D geometry
+# Delaunay.cc	Slow Delaunay triangulation
+# Delaunay.java	Slow Delaunay triangulation (Java)
+
+
+[Dynamic Programming]
+DP/LIS.cc	Longest increasing subsequence
+DP/LCS.cc	Longest common subsequence
+DP/Partition.cc Partition Problem
+
+
+[Math]
+Euclid.cc	Number theory (modular, Chinese remainder, linear Diophantine)
+# Primes.cc	Prime numbers
+# GaussJordan.cc	Systems of linear equations, matrix inverse, determinant
+# ReducedRowEchelonForm.cc	Reduced row echelon form, matrix rank
+# FFT_new.cc	Fast Fourier transform
+FFT.cc	Fast Fourier transform
+# Simplex.cc	Simplex algorithm
+
+
+[Strings]
+Strings/SuffixArray.cc	Suffix array - Stanford
+Strings/KMP.cc Knuth-Morris-Prath (String matching)
+
+
+[More Stuff]
 LogLan.java	Regular expressions
-Primes.cc	Prime numbers
-IO.cc	C++ input/output
-# KMP-st.cc	Knuth-Morris-Pratt - Stanford
-LatLong.cc	Latitude/longitude
-EmacsSettings.txt	Emacs settings
+CSP.cc	Constraint satisfaction problems
+
+#KMP-st.cc	Knuth-Morris-Pratt - Stanford
+#LatLong.cc	Latitude/longitude
+#EmacsSettings.txt	Emacs settings
 #TopologicalSort.cc	Topological sort (C++)
-#Dates.java	Dates (Java)
 #DecFormat.java	Decimal output formatting (Java)
-#RandomSTL.cc	Random STL stuff
-#CSP.cc	Constraint satisfaction problems
 #FastExpo.cc	Fast exponentiation
-#LCS.cc	Longest common subsequence
 #MillerRabin.c	Miller-Rabin Primality Test (C)
 
 
-#[Math]
-Add things
+#Useless stuff
+#MaxFlow.cc	Dense max-flow
+#Dinic.cc	Sparse max-flow
+#PushRelabel.cc	Push-relabel max-flow	
+#MinCostMatching.cc	Min-cost matching
+#MaxBipartiteMatching.cc	Max bipartite matchine
+#GraphCutInference.cc	Graph cut inference
+#MaxFlow.java	Max-flow (Java)
+#MinCostMaxFlow.java	Min-cost max-flow (Java)
+
