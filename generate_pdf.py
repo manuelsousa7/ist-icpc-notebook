@@ -12,16 +12,18 @@ def get_sections():
             line = line.strip()
             if len(line) == 0: continue
             if line[0] == '[':
+                section_name = line[1:-1]
+                print(section_name)
+                subsections = []
                 if section_name is not None:
                     sections.append((section_name, subsections))
-                section_name = line[1:-1]
-                subsections = []
             else:
                 tmp = line.split()
                 tmp = [tmp[0], ' '.join(tmp[1:])]
                 if len(tmp) == 1:
                     raise ValueError('Subsection parse error: %s' % line)
                 filename = tmp[0]
+                print(filename)
                 subsection_name = tmp[1]
                 if subsection_name is None:
                     raise ValueError('Subsection given without section')
@@ -47,6 +49,7 @@ def get_tex(sections):
     tex = []
     add = tex.append
     for (section_name, subsections) in sections:
+        print(section_name)
         add('\\section{%s}\n' % texify(section_name))
         for (filename, subsection_name) in subsections:
             add('\\subsection{%s}\n' % texify(subsection_name))
@@ -60,5 +63,7 @@ if __name__ == "__main__":
     tex = get_tex(sections)
     with open('contents.tex', 'w') as f:
         f.write(tex)
+    subprocess.call(['rm', 'notebook.pdf'])
     latexmk_options = ["latexmk", "-pdf", "notebook.tex"]
     subprocess.call(latexmk_options)
+

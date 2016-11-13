@@ -38,11 +38,11 @@ Flows/MinCut.cc	Global min-cut - Stanford
 [Data structures]
 Structures/RMQ.cc Range Minimum Query
 BIT.cc	Binary Indexed Tree - Stanford
-# UnionFind.cc	Union-find set - Stanford
 KDTree.cc	KD-tree
 splay.cc	Splay tree
 SegmentTreeLazy.java	Lazy segment tree
 LCA.cc	Lowest common ancestor
+
 
 [Geometry]
 ConvexHull.cc	Convex hull - Stanford
@@ -77,17 +77,20 @@ Strings/SuffixArray.cc	Suffix array - Stanford
 Strings/KMP.cc Knuth-Morris-Prath (String matching)
 
 
-[More Stuff]
-LogLan.java	Regular expressions
-CSP.cc	Constraint satisfaction problems
+[Cool Stuff]
+#LogLan.java	Regular expressions
+#CSP.cc	Constraint satisfaction problems
+
+TopologicalSort.cc	Topological sort (C++)
+UnionFind.cc	Union-find set - Stanford
+MillerRabin.cc	Miller-Rabin Primality Test (C)
+FastExpo.cc	Fast exponentiation
+
 
 #KMP-st.cc	Knuth-Morris-Pratt - Stanford
 #LatLong.cc	Latitude/longitude
 #EmacsSettings.txt	Emacs settings
-#TopologicalSort.cc	Topological sort (C++)
 #DecFormat.java	Decimal output formatting (Java)
-#FastExpo.cc	Fast exponentiation
-#MillerRabin.c	Miller-Rabin Primality Test (C)
 
 
 #Useless stuff

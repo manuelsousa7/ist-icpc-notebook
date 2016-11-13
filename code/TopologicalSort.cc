@@ -1,4 +1,4 @@
-// This function uses performs a non-recursive topological sort.
+// This function performs a non-recursive topological sort.
 //
 // Running time: O(|V|^2).  If you use adjacency lists (vector<map<int> >),
 //               the running time is reduced to O(|E|).
@@ -10,11 +10,7 @@
 //
 // If no ordering is possible, false is returned.
 
-#include <iostream>
-#include <queue>
-#include <cmath>
-#include <vector>
-
+#include <iostream>, <queue>, <cmath>, <vector>
 using namespace std;
 
 typedef double T;
