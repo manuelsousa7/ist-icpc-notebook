@@ -40,9 +40,10 @@ Structures/RMQ.cc Range Minimum Query
 BIT.cc	Binary Indexed Tree - Stanford
 KDTree.cc	KD-tree
 splay.cc	Splay tree
-SegmentTreeLazy.java	Lazy segment tree
+#SegmentTreeLazy.java	Lazy segment tree
 LCA.cc	Lowest common ancestor
-
+Structures/fenwick.cpp Fenwick Tree
+Structures/segment_tree.cpp Segment Tree
 
 [Geometry]
 ConvexHull.cc	Convex hull - Stanford
@@ -73,8 +74,13 @@ FFT.cc	Fast Fourier transform
 
 
 [Strings]
-Strings/SuffixArray.cc	Suffix array - Stanford
 Strings/KMP.cc Knuth-Morris-Prath (String matching)
+Strings/SuffixArray.cc	Suffix array - Stanford
+Strings/aho-corasick.cpp Aho Corasick
+Strings/dynamic_hashing.cpp Dynamic Hashing
+Strings/manacher.cpp Manacher
+Strings/minimum_rotation.cpp Minimum Rotation
+Strings/z_algorithm.cpp Z algorithm
 
 
 [Cool Stuff]
