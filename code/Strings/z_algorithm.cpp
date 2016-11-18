@@ -1,4 +1,4 @@
-// Find z function
+// Find z function -> z[i] := length of the longest substring starting at i that is a substring of S
 int n = s.size();
 vector<int> z(n);
 z[0] = 0;
