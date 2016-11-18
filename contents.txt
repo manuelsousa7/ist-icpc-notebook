@@ -76,6 +76,7 @@ FFT.cc	Fast Fourier transform
 [Strings]
 Strings/KMP.cc Knuth-Morris-Prath (String matching)
 Strings/SuffixArray.cc	Suffix array - Stanford
+Strings/suffix_array.cpp	Another Suffix array
 Strings/aho-corasick.cpp Aho Corasick
 Strings/dynamic_hashing.cpp Dynamic Hashing
 Strings/manacher.cpp Manacher
