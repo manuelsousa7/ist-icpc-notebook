@@ -31,8 +31,10 @@ SCC.cc	Strongly connected components - Stanford
 [Flows]
 Flows/FordFulkerson.cc Ford-Fulkerson (Max Flow)
 Flows/EdmondsKarp.cc Edmonds-Karp (Max Flow)
+Dinic.cc Dinic's Algorithm (V2E)
 Flows/MinCostMaxFlow.cc	Min-cost max-flow - Stanford
 Flows/MinCut.cc	Global min-cut - Stanford
+
 
 
 [Data structures]
@@ -43,6 +45,7 @@ splay.cc	Splay tree
 #SegmentTreeLazy.java	Lazy segment tree
 LCA.cc	Lowest common ancestor
 Structures/fenwick.cpp Fenwick Tree
+Structures/fenwick2d.cpp 2d Fenwick Tree
 Structures/segment_tree.cpp Segment Tree
 
 [Geometry]
@@ -77,6 +80,7 @@ FFT.cc	Fast Fourier transform
 Strings/KMP.cc Knuth-Morris-Prath (String matching)
 Strings/SuffixArray.cc	Suffix array - Stanford
 Strings/suffix_array.cpp	Another Suffix array
+Strings/suffix_tree.cpp	Suffix array + LCP
 Strings/aho-corasick.cpp Aho Corasick
 Strings/dynamic_hashing.cpp Dynamic Hashing
 Strings/manacher.cpp Manacher
